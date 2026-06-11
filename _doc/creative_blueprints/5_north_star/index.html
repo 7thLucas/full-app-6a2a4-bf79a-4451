@@ -1,0 +1,91 @@
+<style>
+.mode-landscape .sl-ns-layout { flex-direction: row; gap: 1.25rem; }
+.mode-portrait .sl-ns-layout { flex-direction: column; gap: 1rem; }
+.mode-landscape .sl-ns-left { flex: 1; min-width: 0; }
+.mode-landscape .sl-ns-right { width: 13.5rem; flex-shrink: 0; }
+.mode-portrait .sl-ns-left { width: 100%; }
+.mode-portrait .sl-ns-right { width: 100%; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="p-10 h-full flex flex-col">
+
+    <!-- Header -->
+    <div class="mb-5">
+      <p class="text-xs font-bold tracking-widest uppercase text-indigo-600 mb-1">North Star</p>
+      <h2 class="text-3xl font-extrabold text-slate-900">The number that matters</h2>
+      <p class="text-xs text-slate-400 mt-1 italic">Projected impact — based on your inputs</p>
+    </div>
+
+    <div class="sl-ns-layout flex flex-1 min-h-0">
+
+      <!-- Left: Operations + Formula -->
+      <div class="sl-ns-left flex flex-col gap-4">
+
+        <!-- Verified Operations -->
+        <div class="bg-indigo-50 rounded-xl p-5 border border-indigo-100">
+          <h3 class="text-xs font-bold text-indigo-700 uppercase tracking-wide mb-3">Weekly Verified Operations</h3>
+          <div class="flex gap-3">
+            <div class="flex-1 bg-white rounded-lg p-3 border border-indigo-100">
+              <p class="text-xs font-bold text-slate-800 mb-1">Interaction Logged</p>
+              <p class="text-xs text-slate-500 leading-relaxed">A call, email, meeting, or note submitted against a contact in the app</p>
+            </div>
+            <div class="flex-1 bg-white rounded-lg p-3 border border-indigo-100">
+              <p class="text-xs font-bold text-slate-800 mb-1">Pipeline Stage Advanced</p>
+              <p class="text-xs text-slate-500 leading-relaxed">A deal moved from one stage to the next (e.g. Qualified → Proposal)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formula -->
+        <div class="bg-slate-50 rounded-xl p-5 border border-slate-200 flex-1">
+          <h3 class="text-xs font-bold text-slate-700 uppercase tracking-wide mb-3">WVO Calculation</h3>
+          <div class="flex flex-wrap items-center gap-2 mb-4 text-sm">
+            <span class="bg-amber-100 text-amber-800 text-xs font-semibold px-2.5 py-1 rounded-lg border border-amber-200">
+              Assumption — adjust: 1 user
+            </span>
+            <span class="text-slate-400 font-bold">×</span>
+            <span class="bg-amber-100 text-amber-800 text-xs font-semibold px-2.5 py-1 rounded-lg border border-amber-200">
+              Assumption — adjust: 10 active contacts
+            </span>
+            <span class="text-slate-400 font-bold">×</span>
+            <span class="bg-amber-100 text-amber-800 text-xs font-semibold px-2.5 py-1 rounded-lg border border-amber-200">
+              Assumption — adjust: 5 interactions / contact / week
+            </span>
+          </div>
+          <p class="text-lg font-black text-indigo-700">= 50 verified operations / week</p>
+          <p class="text-xs text-slate-400 mt-1">Replace assumption chips with your actual numbers to get a precise projection.</p>
+        </div>
+
+      </div>
+
+      <!-- Right: Projected Value -->
+      <div class="sl-ns-right bg-indigo-600 rounded-2xl p-5 flex flex-col justify-between">
+        <div>
+          <p class="text-indigo-200 text-xs font-bold uppercase tracking-wide mb-4">Projected Value</p>
+
+          <div class="space-y-1 text-xs text-indigo-100 mb-3">
+            <p>50 ops/wk</p>
+            <p>× 10 min saved / op</p>
+            <p>× $50 / hr labor cost</p>
+          </div>
+
+          <div class="border-t border-indigo-500 pt-3 mb-4">
+            <p class="text-emerald-300 text-3xl font-black">$417</p>
+            <p class="text-indigo-200 text-xs">per week</p>
+          </div>
+
+          <div class="bg-indigo-500 rounded-xl p-4">
+            <p class="text-indigo-200 text-xs mb-1">Annualised (× 52)</p>
+            <p class="text-white text-2xl font-black">$21,700</p>
+            <p class="text-indigo-200 text-xs mt-0.5">per year recovered</p>
+          </div>
+        </div>
+
+        <p class="text-indigo-300 text-xs leading-relaxed italic mt-4">
+          Projected impact — based on your inputs. Adjust assumption chips to match your actual usage.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
