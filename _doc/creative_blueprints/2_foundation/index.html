@@ -1,0 +1,81 @@
+<style>
+.mode-landscape .sl-split { flex-direction: row; gap: 1.5rem; }
+.mode-portrait .sl-split { flex-direction: column; gap: 1rem; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="p-10 h-full flex flex-col">
+
+    <!-- Header -->
+    <div class="mb-6">
+      <p class="text-xs font-bold tracking-widest uppercase text-indigo-600 mb-1">Foundation</p>
+      <h2 class="text-3xl font-extrabold text-slate-900">Why this app exists</h2>
+    </div>
+
+    <!-- Split: Problem / Solution -->
+    <div class="sl-split flex flex-1 min-h-0">
+
+      <!-- Problem -->
+      <div class="flex-1 bg-rose-50 rounded-2xl p-8 border border-rose-100 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-2 mb-5">
+            <div class="w-8 h-8 rounded-full bg-rose-100 flex items-center justify-center flex-shrink-0">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#e11d48" stroke-width="2.5">
+                <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+              </svg>
+            </div>
+            <h3 class="text-sm font-extrabold text-rose-700 uppercase tracking-wide">The Problem</h3>
+          </div>
+          <p class="text-xl font-bold text-slate-800 leading-snug mb-6">
+            Business relationships managed across scattered notes, inboxes, and memory.
+          </p>
+        </div>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-2 text-sm text-slate-700">
+            <span class="text-rose-400 font-bold mt-0.5">✕</span>
+            Follow-ups fall through the cracks
+          </li>
+          <li class="flex items-start gap-2 text-sm text-slate-700">
+            <span class="text-rose-400 font-bold mt-0.5">✕</span>
+            No single view of where every deal stands
+          </li>
+          <li class="flex items-start gap-2 text-sm text-slate-700">
+            <span class="text-rose-400 font-bold mt-0.5">✕</span>
+            Time lost hunting for context before every call
+          </li>
+        </ul>
+      </div>
+
+      <!-- Solution -->
+      <div class="flex-1 bg-indigo-600 rounded-2xl p-8 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-2 mb-5">
+            <div class="w-8 h-8 rounded-full bg-indigo-500 flex items-center justify-center flex-shrink-0">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </div>
+            <h3 class="text-sm font-extrabold text-indigo-200 uppercase tracking-wide">The Solution</h3>
+          </div>
+          <p class="text-xl font-bold text-white leading-snug mb-6">
+            One focused CRM that keeps every relationship and deal in clear view.
+          </p>
+        </div>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-2 text-sm text-indigo-100">
+            <span class="text-emerald-400 font-bold mt-0.5">✓</span>
+            Centralized contact book — all your people in one place
+          </li>
+          <li class="flex items-start gap-2 text-sm text-indigo-100">
+            <span class="text-emerald-400 font-bold mt-0.5">✓</span>
+            Interaction logs attached to each contact
+          </li>
+          <li class="flex items-start gap-2 text-sm text-indigo-100">
+            <span class="text-emerald-400 font-bold mt-0.5">✓</span>
+            Visual pipeline with drag-friendly deal stages
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
