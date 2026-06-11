@@ -1,0 +1,41 @@
+<style>
+.mode-landscape .sl-layout { flex-direction: row; }
+.mode-portrait .sl-layout { flex-direction: column; }
+.mode-landscape .sl-content { width: 52%; }
+.mode-landscape .sl-visual { width: 48%; }
+.mode-portrait .sl-content { width: 100%; flex: 1; }
+.mode-portrait .sl-visual { width: 100%; height: 40%; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Left: content column -->
+    <div class="sl-content flex flex-col justify-between p-12">
+      <div>
+        <span class="inline-flex items-center bg-indigo-50 text-indigo-700 text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full mb-8">
+          Simple CRM
+        </span>
+        <h1 class="text-5xl font-black text-slate-900 leading-tight tracking-tight mb-5">
+          Every contact.<br>Every deal.<br>In one place.
+        </h1>
+        <p class="text-base text-slate-500 leading-relaxed max-w-xs">
+          Track contacts, log every interaction, and keep your pipeline visible — without the enterprise overhead.
+        </p>
+      </div>
+      <div>
+        <data-attribution />
+        <p class="text-xs text-slate-400 mt-2">MVP · 2026</p>
+      </div>
+    </div>
+
+    <!-- Right: visual anchor -->
+    <div class="sl-visual relative overflow-hidden bg-indigo-50">
+      <img
+        src="https://api-stag.qb-deck.quantumbyte.ai/common/image-generation?prompt=clean%20minimal%20CRM%20dashboard%20interface%20showing%20contact%20list%20and%20kanban%20pipeline%20board%2C%20indigo%20and%20white%20color%20scheme%2C%20professional%20UI%2C%20soft%20shadows%2C%20no%20text"
+        class="w-full h-full object-cover"
+        alt="CRM product visual"
+      />
+    </div>
+
+  </div>
+</section>
